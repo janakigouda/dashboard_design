@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="page-container" class="fade">
+        <div class="header">
+            <div class="container">
+                <div class="r-header">
+                    <a href="#" class="n-brand"><span class="n-logo"></span> DESISTORES.IN</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul class="l-header">
+                    <input type="search" class="i-search" placeholder="Enter keyword" required />
+                    <button type="submit" class="btn-search"><i class="fa fa-search"></i></button>
+
+                    <div class="n-dropdown">
+                        <button onclick="dropFunction()" class="n-drop-btn">developer
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div id="myDropdown" class="n-drop-content">
+                            <a href="#">Change Password</a>
+                            <a href="#">Log Out</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <!-- profile -->
+            <div class="profile_info">
+                <div class="profile_img">
+                    <a href="#"><i class="fa fa-user fa-3x"></i></a>
+                </div>
+                <div class="profile_data">
+                    developer
+                    <small>Super Admin User</small>
+                </div>
+            </div>
+            <!-- list  items -->
+            <ul class="sidebar-menu">
+                <li class="M-dashboard has-sub">
+                    <a href="#dashboard"><i class="fa fa-laptop"></i><span>Dashboard</span></a>
+                </li>
+                <li class="M-management has-sub">
+                    <a href="#management"><i class="fa fa-tags"></i><span>Management</span></a>
+                    <ul class="sub-menu">
+                        <li class="ads"><a href="#">Advertisements</a> </li>
+                        <li class="brand-logos"><a href="#">Brand Logos</a></li>
+                        <li class="main-categories"><a href="#">Main Categories</a></li>
+                        <li class="sub-categories"><a href="#">Sub Categories</a> </li>
+                        <li class="sub-categories-type"><a href="#">Category Name</a></li>
+                        <li class="units"><a href="#">Units</a></li>
+                        <li class="delivery-charges"><a href="#">Delivery Charges</a></li>
+                        <li class="coupons"><a href="#">Coupons</a> </li>
+                        <li class="sliders"><a href="#">Home Sliders Image/Video</a></li>
+                        <li class="testimonials"><a href="#">Testimonials</a></li>
+                    </ul>
+                </li>
+                <li class="M-products has-sub">
+                    <a href="#products"><i class="fa fa-tags"></i> <span>Products</span> </a>
+                    <ul class="sub-menu">
+                        <li class="index"><a href="#">All Products</a> </li>
+                        <li class="pending"><a href="#">Pending Products</a></li>
+                        <li class="available"><a href="#">Available Products</a></li>
+                        <li class="out-of-stock"><a href="#">Out of Stock Products</a></li>
+                    </ul>
+                </li>
+                <li class="M-reviews has-sub">
+                    <a href="#reviews"><i class="fa fa-star"></i> <span>Reviews</span> </a>
+                    <ul class="sub-menu">
+                        <li class="index"><a href="#">All Reviews</a></li>
+                        <li class="active-reviews"><a href="#">Active Reviews</a></li>
+                        <li class="inactive"><a href="#">Inactive Reviews</a></li>
+                        <li class="rejected"><a href="#">Rejected Reviews</a></li>
+                    </ul>
+                </li>
+                <li class="M-orders has-sub">
+                    <a href="#orders"><i class="fa fa-shopping-cart"></i> <span>Orders</span> </a>
+                    <ul class="sub-menu">
+                        <li class="orders"><a href="#">All Orders</a></li>
+                        <li class="processing"><a href="#">Processing Orders</a></li>
+                        <li class="shipped"><a href="#">Shipped Orders</a></li>
+                        <li class="delivered"><a href="#">Delivered Orders</a></li>
+                        <li class="cancelled"><a href="#">Cancelled Orders</a></li>
+                        <li class="failed"><a href="#">Failed Orders</a></li>
+                        <li class="returned"><a href="#">Returned Orders</a></li>
+                    </ul>
+                </li>
+                <li class="M-sellers has-sub">
+                    <a href="#sellers"><i class="fa fa-briefcase"></i> <span>Sellers</span> </a>
+                    <ul class="sub-menu">
+                        <li class="index"><a href="#">All Sellers</a></li>
+                        <li class="pending"><a href="#">Pending Sellers</a></li>
+                        <li class="blocked"><a href="#">Blocked Sellers</a></li>
+                        <li class="verified"><a href="#">Verified Sellers</a></li>
+                    </ul>
+                </li>
+                <li class="M-customers has-sub">
+                    <a href="#users"><i class="fa fa-snapchat-ghost"></i> <span>Users</span> </a>
+                    <ul class="sub-menu">
+                        <li class="admin-users"><a href="#">Admin Users</a></li>
+                        <li class="customers"><a href="#">Customers</a></li>
+                    </ul>
+                </li>
+                <li class="M-reports has-sub">
+                    <a href="#reports"><i class="fa fa-file"></i> <span>Reports</span> </a>
+                    <ul class="sub-menu">
+                        <li class="index"><a href="#">Sales Reports</a></li>
+                        <li class="sellers"><a href="#">Sellers Export</a></li>
+                        <li class="customers"><a href="#">Customers Export</a></li>
+                        <li class="products"><a href="#">Products Export</a></li>
+                    </ul>
+                </li>
+                <li class="M-sms has-sub">
+                    <a href="#sms"><span class="badge">Your balance is 2843 </span><i class="fa fa-comments"></i>
+                        <span>SMS</span> </a>
+                    <ul class="sub-menu">
+                        <li class="send-to"><a href="#">Send SMS</a></li>
+                        <li class="send-to-customers"><a href="#">Send to Customers</a> </li>
+                        <li class="send-to-admin"><a href="#">Send to Admin</a></li>
+                    </ul>
+                </li>
+                <li class="M-email has-sub">
+                    <a href="#email"><i class="fa fa-send"></i> <span>Email</span> </a>
+                    <ul class="sub-menu">
+                        <li class="send-email"><a href="#">Send Email</a></li>
+                        <li class="email-to-customers"><a href="#">Send to Customers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="M-settings has-sub">
+                    <a href="#settings"><i class="fa fa-cogs"></i> <span>Settings</span> </a>
+                    <ul class="sub-menu">
+                        <li class="contact"><a href="#">Website Setup</a></li>
+                        <li class="about-us"><a href="#">About Us</a></li>
+                        <li class="return-policy"><a href="#">Return Policy</a></li>
+                        <li class="terms-and-conditions"><a href="#">Terms & Conditions</a></li>
+                        <li class="privacy-policy"><a href="#">Privacy Policy</a></li>
+                        <li class="locations"><a href="#">Locations</a></li>
+                        <li class="payment"><a href="#">Payment Gateway Settings</a></li>
+                        <li class="sms"><a href="#">SMS Settings</a></li>
+                        <li class="email"><a href="#">Email Settings</a> </li>
+                        <li class="social-media"><a href="#">Social Media Setup</a> </li>
+                        <li class="ui-settings"><a href="#">UI Setup</a></li>
+                    </ul>
+                </li>
+                <li class="M-settings has-sub">
+                    <a href="#"><i class="fa fa-laptop"></i> <span>Blogs</span></a>
+                </li>
+                <li><a href="#" class="sidebar-minify-btn" onclick="myFunctionN()"><i
+                            class="fa fa-angle-double-left"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <p>hi</p>
+        </div>
+    </div>
+</body>
+
+</html>
